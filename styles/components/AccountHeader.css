@@ -1,0 +1,72 @@
+.account-header__profile {
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+}
+
+.account-header__profile img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+.account-header__profile span {
+    font-size: 0.9rem;
+}
+
+.account-header__modal {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 2rem;
+    width: 100vw;
+    height: 80vh;
+    background-color: var(--color-background);
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 8px 0 #00000022;
+    text-align: center;
+}
+
+.account-header__modal ul {
+    display: block;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+}
+
+.account-header__modal li {
+    width: 100%;
+    display: block;
+}
+
+.account-header__modal img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.account-header__modal--show {
+    display: block;
+}
+
+/* _____________ media queries ________________ */
+
+@media (min-width: 425px) {
+    .account-header__container {
+        position: relative;
+    }
+
+    .account-header__modal {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}

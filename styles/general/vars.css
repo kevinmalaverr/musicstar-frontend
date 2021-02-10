@@ -1,0 +1,39 @@
+:root {
+    --color-white: #fff;
+    --color-cloud: #e9e9eb;
+    --color-red: #ef4b4c;
+    --color-blue: #3d619b;
+    --color-dark: #1b2333;
+    --color-dark-2: #253046;
+    --color-grey-dark: #565e6b;
+    --color-grey-light: #a1a1b9;
+
+    --shadow-outline: 0 0 0 2px var(--color-text);
+    --color-shadow-light: transparent;
+    --color-shadow-dark: #00000033;
+
+    --color-card-light: transparent;
+    --color-card-dark: #bd9fff17;
+}
+
+.theme-light {
+    --color-background: var(--color-white);
+    --color-background-2: var(--color-cloud);
+    --color-primary: var(--color-red);
+    --color-secondary: var(--color-blue);
+    --color-text: var(--color-dark);
+    --color-grey: var(--color-grey-dark);
+    --color-shadow: var(--color-shadow-dark);
+    --color-card: var(--color-card-light);
+}
+
+.theme-dark {
+    --color-background: var(--color-dark);
+    --color-background-2: var(--color-dark-2);
+    --color-primary: var(--color-red);
+    --color-secondary: var(--color-blue);
+    --color-text: var(--color-white);
+    --color-grey: var(--color-grey-light);
+    --color-shadow: var(--color-shadow-light);
+    --color-card: var(--color-card-dark);
+}

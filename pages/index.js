@@ -1,29 +1,25 @@
-import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-import { END } from 'redux-saga'
-import { wrapper } from '../store'
-import { loadData, startClock, tickClock } from '../actions'
-import Page from '../components/page'
+import Header from '../components/Header';
 
-const Index = () => {
-  const dispatch = useDispatch()
+const Home = () => {
+  return (
+    <>
+      <section className="hero">
+        <Header />
+        <div className="hero__content">
+          <h1 className="hero__title">Hero messagge</h1>
+        </div>
+        {/* <Picture
+          imgProps={{ className: 'hero__background', alt: 'background' }}
+          phone={imgLandingPhone}
+          tablet={imgLandingTablet}
+          desktop={imgLandingDesktop}
+        /> */}
+      </section>
+      <section className="container">
+        <h1>clickk</h1>
+      </section>
+    </>
+  );
+};
 
-  useEffect(() => {
-    dispatch(startClock())
-  }, [dispatch])
-
-  return <Page title="Index Page" linkTo="/other" NavigateTo="Other Page" />
-}
-
-export const getStaticProps = wrapper.getStaticProps(async ({ store }) => {
-  store.dispatch(tickClock(false))
-
-  if (!store.getState().placeholderData) {
-    store.dispatch(loadData())
-    store.dispatch(END)
-  }
-
-  await store.sagaTask.toPromise()
-})
-
-export default Index
+export default Home;

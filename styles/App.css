@@ -1,0 +1,46 @@
+@import "./general/vars";
+@import "./general/reset.css";
+@import "./general/buttons";
+@import "./general/links";
+@import "./general/position";
+@import "./general/mediaQueries.css";
+
+html {
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    color: var(--color-text);
+}
+
+button {
+    color: var(--color-text);
+}
+
+.v-line {
+    width: 1px;
+    height: 100%;
+    background-color: var(--color-text);
+    opacity: 0.5;
+    margin: 0 2rem;
+}
+
+.bold {
+    color: var(--color-primary);
+}
+
+@media (--tablet-viewport) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+}

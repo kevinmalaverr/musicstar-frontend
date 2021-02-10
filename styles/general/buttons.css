@@ -1,0 +1,47 @@
+/* ___________ General button __________________ */
+.button {
+    font-size: 1.1rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.6em 2em;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+
+.button:focus {
+    box-shadow: var(--shadow-outline);
+    outline: none;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.button--big {
+    font-size: 1.2rem;
+}
+
+.button--small {
+    font-size: 1rem;
+}
+
+/* ___________ fill button __________________ */
+.button--fill {
+    border: none;
+}
+
+.button--fill:hover {
+    filter: brightness(90%);
+}
+
+/* // ___________ outline button ________________ */
+.Button.outline {
+    border: 2px solid var(--color-primary);
+    background-color: transparent;
+    color: var(--color-primary);
+
+    /* &:hover {
+        color: #fff;
+        background-color: var(--color-primary);
+    } */
+}

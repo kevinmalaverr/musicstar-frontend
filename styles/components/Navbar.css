@@ -1,0 +1,45 @@
+/* navigation bar */
+
+.navbar {
+    color: var(--color-text);
+}
+
+.navbar--header {
+    display: none;
+}
+
+.navbar--lateral {
+    position: fixed;
+    width: 400px;
+    max-width: 80%;
+    height: 100%;
+    right: -410px;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-background);
+    transition: 0.3s;
+}
+
+.navbar--lateral ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+}
+
+.navbar--lateral.active {
+    right: 0;
+}
+
+.close-menu {
+    font-size: 2rem;
+    color: var(--color-text);
+    background-color: transparent;
+}
+
+/* ______________ media quieries _____________ */
+@media (min-width: 768px) {
+    .navbar--header {
+        display: block;
+    }
+}

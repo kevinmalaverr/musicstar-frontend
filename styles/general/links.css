@@ -1,0 +1,25 @@
+.Link {
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.6em 1em;
+    border-radius: 2em;
+    color: var(--color-text);
+    /* 
+    &:hover {
+        color: var(--color-turquoise);
+    }
+
+    &[aria-current] {
+        color: var(--color-primary);
+    }
+
+    &.fill {
+        background-color: var(--color-primary);
+        color: #fff;
+    } */
+}
+
+.a-nostyle {
+    text-decoration: none;
+    color: inherit;
+}

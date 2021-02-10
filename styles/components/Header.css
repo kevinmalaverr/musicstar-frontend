@@ -1,0 +1,42 @@
+.header {
+    width: 100%;
+    top: 0px;
+    display: grid;
+    grid-template-columns: 160px 1fr auto auto;
+    margin: auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    z-index: 10;
+}
+
+.show-menu {
+    display: block;
+    font-size: 1.6rem;
+    padding: 0;
+    line-height: 0;
+    background: transparent;
+    stroke: var(--color-text);
+}
+
+/* ______________ media quieries _____________ */
+@media (min-width: 425px) {
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 1.4rem 1rem;
+        max-width: 1000px;
+    }
+
+    .show-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        margin: auto;
+        max-width: 1200px;
+    }
+}
